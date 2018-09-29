@@ -15,17 +15,19 @@
   </head>
 
   <body>
-      <form class="form-change" action="./">
+      <form novalidate class="form-change" action="./">
+          <div id="error-message" class="alert alert-danger" role="alert">
+          </div>
           <div class="form-group row">
               <label class="col-sm-2 col-form-label">旧密码</label>
               <div class="col-sm-10">
-                <input type="password" class="form-control"  placeholder="请输入旧密码">
+                <input type="password" class="form-control old-password"  placeholder="请输入旧密码">
               </div>
             </div>
             <div class="form-group row">
               <label for="inputPassword3" class="col-sm-2 col-form-label">新密码</label>
               <div class="col-sm-10">
-                <input type="password" class="form-control"  placeholder="请输入新密码">
+                <input type="password" class="form-control password"  placeholder="请输入新密码">
                 <input type="password" class="form-control password-again"  placeholder="请再次输入新密码">
               </div>
             </div>
@@ -35,5 +37,9 @@
                 </div>
             </div>
         </form>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./bootstrap/popper.min.js"></script>
+        <script src="./bootstrap/bootstrap.min.js"></script>
+        <script src="./js/app.js"></script>
   </body>
 </html>

@@ -81,3 +81,8 @@ body {
     max-width: 500px;
     margin: auto;   
 }
+
+
+#error-message {
+    display: none
+}
